@@ -1,0 +1,28 @@
+service: serverless-webpack-babel-boilerplate
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  stage: dev
+
+functions:
+  first:
+    handler: firstHandler.hello
+    events:
+      - http:
+          method: get
+          path: first
+          integration: lambda
+  second:
+    handler: secondHandler.hello
+    events:
+      - http:
+          method: get
+          path: second
+          integration: lambda
+
+plugins:
+  - serverless-webpack
+
+package:
+  individually: true
