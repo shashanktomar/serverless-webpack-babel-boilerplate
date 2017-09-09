@@ -1,0 +1,40 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb-base",
+  "env": {
+    "jest": true,
+    "node": true,
+    "jest/globals": true
+  },
+  "rules": {
+    "arrow-parens": ["off"],
+    "compat/compat": 2,
+    "consistent-return": "off",
+    "comma-dangle": "off",
+    "generator-star-spacing": "off",
+    "import/prefer-default-export": "off",
+    "import/no-unresolved": [2, {
+      "caseSensitive": false
+    }],
+    "import/no-extraneous-dependencies": "off",
+    "no-console": 0,
+    "no-use-before-define": "off",
+    "promise/param-names": 2,
+    "promise/always-return": 2,
+    "promise/catch-or-return": 2,
+    "promise/no-native": 0,
+    "flowtype-errors/show-errors": "error",
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/valid-expect": "error"
+  },
+  "plugins": [
+    "flowtype",
+    "flowtype-errors",
+    "import",
+    "promise",
+    "compat",
+    "jest"
+  ]
+}

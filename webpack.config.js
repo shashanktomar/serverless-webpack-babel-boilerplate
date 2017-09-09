@@ -1,4 +1,3 @@
-const path = require('path');
 const slsw = require('serverless-webpack');
 
 module.exports = {
@@ -11,10 +10,5 @@ module.exports = {
       include: __dirname,
       exclude: /node_modules/,
     }]
-  },
-  output: {
-    libraryTarget: 'commonjs',
-    path: path.join(__dirname, '.webpack'),
-    filename: '[name].js'
   }
 };

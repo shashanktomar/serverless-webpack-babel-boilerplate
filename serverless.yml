@@ -6,19 +6,19 @@ provider:
   stage: dev
 
 functions:
-  first:
-    handler: firstHandler.hello
+  houses:
+    handler: src/handlers/houses.handler
     events:
       - http:
           method: get
-          path: first
+          path: houses
           integration: lambda
-  second:
-    handler: secondHandler.hello
+  heir:
+    handler: src/handlers/heir.handler
     events:
       - http:
           method: get
-          path: second
+          path: heir
           integration: lambda
 
 plugins:
