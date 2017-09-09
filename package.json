@@ -1,10 +1,22 @@
 {
-  "name": "serverless-webpack-babel-boilerplate",
+  "name": "generator-serverless-webpack-babel-boilerplate",
   "version": "1.0.0",
-  "description": "A serverless nodejs boilerplate using webpack and babel.",
+  "description": "A serverless nodejs boilerplate using webpack and babel. This uses aws-lambda as the provider but can be easily configured to support others.",
   "main": "index.js",
-  "author": "Shashank Tomar",
+  "author": "Shashank Tomar (shashank004@gmail.com)",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shashanktomar/serverless-webpack-babel-boilerplate.git"
+  },
+  "keywords": [
+    "yeoman-generator", 
+    "serverless", 
+    "nodejs", 
+    "webpack", 
+    "babel", 
+    "aws-lambda"
+  ],
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
