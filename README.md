@@ -8,6 +8,6 @@ Run first function locally `npm run invoke:local houses`
 Run second function locally `npm run invoke:local heir`
 
 ## Deploy
-`serverless deploy`
+`serverless deploy` or `yarn deploy`
 
 See other scripts in package.json for more options.

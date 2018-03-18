@@ -1,6 +1,6 @@
 {
   "name": "serverless-webpack-babel-boilerplate-aws",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A serverless nodejs boilerplate using webpack and babel. This uses aws-lambda as the provider but can be easily configured to support others.",
   "main": "index.js",
   "author": "Shashank Tomar (shashank004@gmail.com)",
@@ -17,9 +17,11 @@
     "aws-lambda"
   ],
   "scripts": {
+    "deploy": "serverless deploy -s dev",
     "invoke:local": "serverless invoke local --function",
     "lint": "eslint --cache --format=node_modules/eslint-formatter-pretty .",
     "lint:fix": "npm run lint -- --fix",
+    "logs": "serverless logs -s dev -t -f",
     "flowtyped": "flow-typed install",
     "test": "jest",
     "test:coverage": "npm test -- --coverage",
