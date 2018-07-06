@@ -1,9 +1,26 @@
+# NOTE: update this with your service name
 service: serverless-webpack-babel-boilerplate
+
+# Use the serverless-webpack plugin to transpile ES6
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+# serverless-webpack configuration
+# Enable auto-packing of external modules
+custom:
+  webpack:
+    webpackConfig: ./webpack.config.js
+    includeModules: true
+  serverless-offline:
+    babelOptions:
+      presets: ["env", "flow"]
 
 provider:
   name: aws
-  runtime: nodejs6.10
+  runtime: nodejs8.10
   stage: dev
+  region: us-east-1
 
 functions:
   houses:
@@ -12,17 +29,12 @@ functions:
       - http:
           method: get
           path: houses
-          integration: lambda
   heir:
     handler: src/handlers/heir.handler
     events:
       - http:
           method: get
           path: heir
-          integration: lambda
-
-plugins:
-  - serverless-webpack
 
 package:
   individually: true

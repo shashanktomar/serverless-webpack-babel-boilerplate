@@ -2,7 +2,7 @@
   "name": "serverless-webpack-babel-boilerplate-aws",
   "version": "1.1.1",
   "description": "A serverless nodejs boilerplate using webpack and babel. This uses aws-lambda as the provider but can be easily configured to support others.",
-  "main": "index.js",
+  "main": "src/handlers/heir.js",
   "author": "Shashank Tomar (shashank004@gmail.com)",
   "license": "MIT",
   "repository": {
@@ -33,11 +33,13 @@
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
     "babel-jest": "^21.0.2",
-    "babel-loader": "^7.1.2",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-source-map-support": "^1.0.0",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-stage-3": "^6.24.1",
     "eslint": "^4.6.1",
     "eslint-config-airbnb-base": "^12.0.0",
     "eslint-formatter-pretty": "^1.3.0",
@@ -49,11 +51,15 @@
     "eslint-plugin-promise": "^3.5.0",
     "flow-bin": "^0.54.1",
     "flow-typed": "^2.1.5",
-    "jest": "^21.0.2",
-    "serverless-webpack": "3.0.0-rc.2",
-    "webpack": "3.3.0"
+    "jest": "^21.2.1",
+    "serverless-offline": "^3.20.3",
+    "serverless-webpack": "5.1.0",
+    "webpack": "4.2.0",
+    "webpack-node-externals": "^1.6.0"
   },
   "dependencies": {
-    "lodash": "^4.17.4"
+    "babel-runtime": "^6.26.0",
+    "lodash": "^4.17.4",
+    "source-map-support": "^0.4.18"
   }
 }

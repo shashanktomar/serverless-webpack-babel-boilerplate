@@ -1,7 +1,10 @@
 {
-  "presets": ["es2015"],
+  "presets": [
+    ["env", { "node": "8.10" }],
+    "stage-3"
+  ],
   "plugins": [
-    "transform-flow-strip-types",
-    "transform-object-rest-spread"
-  ]
+    "source-map-support", 
+    "transform-runtime", 
+    "transform-flow-strip-types"]
 }

@@ -5,5 +5,11 @@ if (!global._babelPolyfill) {
 /* eslint-enable */
 
 export const handler = (event, context, cb) => {
-  cb(null, 'Jon Snow');
+  const response = {
+    statusCode: 200,
+    body: JSON.stringify({
+      heir: 'Jon Snow'
+    })
+  };
+  cb(null, response);
 };
