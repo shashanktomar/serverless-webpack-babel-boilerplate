@@ -12,12 +12,12 @@ const kingdoms = [
   'Dragonstone'
 ];
 
-const greatHouses = (): Promise<Array<House>> => {
+const greatHouses = async (): Promise<Array<House>> => {
   const result = _.zip(houses, kingdoms).map(pair => ({
     house: pair[0],
     kingdom: pair[1]
   }));
-  return Promise.resolve(result);
+  return result;
 };
 
 // $FlowIgnore
