@@ -1,6 +1,6 @@
 {
   "name": "serverless-webpack-babel-boilerplate-aws",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "A serverless nodejs boilerplate using webpack and babel. This uses aws-lambda as the provider but can be easily configured to support others.",
   "main": "src/handlers/heir.js",
   "author": "Shashank Tomar (shashank004@gmail.com)",
