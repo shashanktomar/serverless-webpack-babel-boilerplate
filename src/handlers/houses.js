@@ -13,6 +13,7 @@ const kingdoms = [
 ];
 
 const greatHouses = async (): Promise<Array<House>> => {
+  // $FlowIgnore
   const result = _.zip(houses, kingdoms).map(pair => ({
     house: pair[0],
     kingdom: pair[1]
