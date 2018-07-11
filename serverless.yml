@@ -1,3 +1,5 @@
+frameworkVersion: ">=1.28.0"
+
 # NOTE: update this with your service name
 service: serverless-webpack-babel-boilerplate
 
