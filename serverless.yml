@@ -1,4 +1,4 @@
-frameworkVersion: ">=1.28.0"
+frameworkVersion: '>=1.28.0'
 
 # NOTE: update this with your service name
 service: serverless-webpack-babel-boilerplate
@@ -16,13 +16,15 @@ custom:
     includeModules: true
   serverless-offline:
     babelOptions:
-      presets: ["env", "flow"]
+      presets: ['env', 'flow']
 
 provider:
   name: aws
   runtime: nodejs8.10
   stage: dev
   region: us-east-1
+  versionFunctions: false
+  environment: ${file(env.yml):${self:provider.stage}}
 
 functions:
   houses:

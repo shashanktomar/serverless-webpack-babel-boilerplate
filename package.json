@@ -17,6 +17,7 @@
     "aws-lambda"
   ],
   "scripts": {
+    "local": "sls offline start",
     "deploy": "serverless deploy -s dev",
     "invoke:local": "serverless invoke local --function",
     "lint": "eslint --cache --format=node_modules/eslint-formatter-pretty .",
@@ -52,14 +53,15 @@
     "flow-bin": "^0.76.0",
     "flow-typed": "^2.5.1",
     "jest": "^21.2.1",
-    "serverless-offline": "^3.20.3",
+    "serverless-offline": "^3.25.7",
     "serverless-webpack": "5.1.0",
     "webpack": "4.2.0",
     "webpack-node-externals": "^1.6.0"
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",
-    "lodash": "^4.17.4",
+    "pino": "^5.0.5",
+    "ramda": "^0.25.0",
     "source-map-support": "^0.4.18"
   }
 }
